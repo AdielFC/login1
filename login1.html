@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de PET en la Industria</title>
+    <meta name="description" content="Información sobre el selector de PET en la industria">
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#" onclick="showSection('section1')">Sección 1</a></li>
+                    <li><a href="#" onclick="showSection('section2')">Sección 2</a></li>
+                    <li><a href="#" onclick="showSection('section3')">Sección 3</a></li>
+                    <li><a href="#" onclick="showSection('section4')">Sección 4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenido">
+
+            <section id="section1" class="seccion active">
+                <h2 class="titulo">BIENVENIDOS al  DESARROLLO DE SISTEMA AUTOMATIZADO PARA LA SELECCIÓN DE PET MEDIANTE
+                     LOS COLORES PRIMARIOS</h2>
+                <p>El Selector de PET surge como una respuesta ingeniosa y tecnológica a este desafío. Este software, 
+                    diseñado, ofrece una solución innovadora para la clasificación y selección de botellas de PET según su color, 
+                    en este caso, los colores primarios (azul, amarillo, rojo). 
+                    El Selector de PET es capaz de distinguir entre los diferentes colores de las botellas con una precisión excepcional, eliminando así el margen de error humano y garantizando una clasificación óptima. 
+                    Con esto se pretende simplificar y optimizar el proceso de clasificación de botellas de PET, 
+                    el Selector de PET no solo mejora la eficiencia operativa, sino que también promueve un enfoque más sostenible
+                     y responsable hacia el reciclaje de plásticos. 
+</p>
+                <img src="img/sele.jpg" alt="Imagen del Selector de PET" class="imagen">
+            </section>
+
+            <section id="section2" class="seccion">
+                <h2>PROBLEMTICA A RESOLOVER!!!</h2>
+                <p>La gestión inadecuada del PET resulta en la acumulación de residuos plásticos en el medio ambiente,
+                    lo que afecta la calidad del suelo, el agua y el aire, y contribuye al problema global de la 
+                   contaminación plástica. La recolección de PET se realiza de manera indiscriminada, lo que conduce
+                    a un uso ineficiente de recursos y aumenta los costos operativos</p>
+                    <img src="img/bote.jpeg" alt="Imagen del Selector de PET" class="imagen">
+                    <h2 class="titulo">SOLUCIÓN</h2>
+                    <p> Se ocupa realizar un sistema automatizado de selección de botellas de PET que pueda identificar y 
+                        seleccionar los colores primarios de botellas, que se manejan en la industria para llevar a cabo un 
+                        proceso eficaz y mayor rapidez al realizar este paso antes mencionado así como los costos elevados
+                         de procesamientos.
+                         </p>
+                         <img src="img/pet.jpg" alt="Imagen del Selector de PET" class="imagen">
+                         
+            </section>
+
+            <section id="section3" class="seccion">
+                <h2 class="titulo">Implementación del Selector de PET</h2>
+                <p>Se crea un diseño en 3D del modelado del maquetado y así mismo se creó modelado en SketchUp de los componentes
+                    a conectar entre sí con el hardware.
+                </p>
+                <div class="imagenes-container">
+                   
+                    <figure class="imagen-container">
+                        <img src="img/vanda.jpg" alt="Modelo de la Banda Transportadora" class="imagen">
+                        <p><figcaption>Modelo de la Banda Transportadora</figcaption></p>
+                    </figure>
+                    <figure class="imagen-container">
+                        <img src="img/diag.jpg" alt="Diagrama del Selector de PET" class="imagen">
+                        <figcaption>Diagrama del Selector de PET</figcaption>
+                    </figure>
+                    <figure class="imagen-container">
+                        <img src="img/modelo1.jpg" alt="Modelo 3D del Selector de PET" class="imagen">
+                        <figcaption>Diagrama de las conexiones del PUENTE H</figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+
+            <section id="section4" class="seccion">
+                <h2 class="titulo">Resultados</h2>
+                <p>Al realizar pruebas profundas, la capacidad del sistema para identificar y clasificar con éxito el PET 
+                    según sus colores primarios, azul, amarillo y rojo, con esto la implementación de la automatización 
+                    ha contribuido a la reducción significativa del error humano, lo que garantiza una mayor consistencia
+                     y confiabilidad en la clasificación de PET</p>
+                     <img src="img/final.jpg" alt="Imagen del Selector de PET" class="imagen">
+                     
+            </section>
+
+        </div>
+    </main>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .nav li {
+            margin: 0;
+        }
+
+        .nav a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #575757;
+        }
+
+        .contenido {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .seccion {
+            display: none;
+            text-align: center;
+        }
+
+        .seccion.active {
+            display: block;
+        }
+
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .imagen {
+            max-width: 50%;  /* Establecer el ancho máximo al 50% del contenedor */
+            max-height: 300px;  /* Establecer la altura máxima en 300px */
+            height: auto;  /* Ajustar la altura automáticamente */
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.seccion');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        // Mostrar la primera sección por defecto
+        showSection('section1');
+    </script>
+</body>
+
+</html>
